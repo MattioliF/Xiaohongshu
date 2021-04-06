@@ -4,7 +4,14 @@
 
 
 <view class="profile" wx:if="{{currentUser}}">
+    <view class="classContainer"> 
+    <view class="titles">THe titles</view>
+    <view class= "media"> The media</view>
+    <view class="user"> The name of the user that published</view>
+    <view class= "likes">Number of likes </view>
+    <view class="views">Number of views</view>
     
+    </view>
   </view>
   <button wx:else class="login-button" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">Please login in order to see posts</button>
 </view>
