@@ -4,7 +4,6 @@
     "pages/show/show",
     "pages/logs/logs"
   ],
-
   "tabBar": {
     "list": [
       {
@@ -13,10 +12,11 @@
       },
       {
         "pagePath": "pages/show/show",
-        "text": "Show"
+        "text": "Menu"
       }
     ]
   },
+
 
   "window":{
     "backgroundTextStyle":"light",
@@ -26,12 +26,13 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-
-  "plugins": {
-    "sdkPlugin": {
-      "version": "3.17.0",
-      "provider": "wxc6b86e382a1e3294"
-    }
+  
+"plugins": {
+  "sdkPlugin": {
+    "version": "3.17.1",
+    "provider": "wxc6b86e382a1e3294"
   }
+} 
+
 }
 

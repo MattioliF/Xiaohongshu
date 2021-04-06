@@ -1,17 +1,22 @@
 // pages/show/show.js
+const app = getApp()
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    currentUser: null,
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log(app.globalData)
+    this.setData({
+      currentUser: app.globalData.userInfo
+    })
 
   },
 
@@ -62,5 +67,22 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  userInfoHandler: function(data) {
+    const self = this
+    wx.BaaS.auth.loginWithWechat(data).then(
+      (res) => {
+        console.log('results',res)
+        self.setData ({
+          currentUser:res
+        }),
+        wx.setStorageSync('userInfo', res)
+        getApp().globalData.userInfo = res
+      },
+      (err) => {
+      },
+    )
+  },
+
 })

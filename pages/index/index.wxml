@@ -1,9 +1,10 @@
-<!--index.wxml-->
-<view class="container">
-  <image class="small-image" src="{{restaurant.photo}}"></image>
 
-  <view class="profile" wx:if="{{currentUser}}">
-    <button bindtap="startOrder" class="start-button">Start your order</button>
+<view class="container">
+
+
+
+<view class="profile" wx:if="{{currentUser}}">
+    <button bindtap="goToShowPage" class="start-button">Go to your show page</button>
   </view>
   <button wx:else class="login-button" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">Login</button>
 </view>

@@ -1,2 +1,10 @@
-<!--pages/show/show.wxml-->
-<text>pages/show/show.wxml</text>
+
+<view class="container">
+
+
+
+<view class="profile" wx:if="{{currentUser}}">
+    
+  </view>
+  <button wx:else class="login-button" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">Please login in order to see posts</button>
+</view>
