@@ -8,3 +8,5 @@
   </view>
   <button wx:else class="login-button" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">Login</button>
 </view>
+
+

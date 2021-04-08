@@ -1,4 +1,4 @@
-
+<!--pages/show/show.wxml-->
 <view class="container">
 
 
@@ -14,3 +14,4 @@
   </view>
   <button wx:else class="login-button" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">Please login in order to see posts</button>
 </view>
+
